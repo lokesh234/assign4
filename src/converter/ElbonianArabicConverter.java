@@ -207,4 +207,68 @@ public class ElbonianArabicConverter {
      * @return An Elbonian value
      */
 
+    public String toElbonian() {
+        String string = "";
+        int num;
+        num = Integer.parseInt(number);
+
+        if(num>=1000){
+            string += 'M';
+            num -= 1000;
+        }
+        if(num>=1000){
+            string += 'M';
+            num -= 1000;
+        }
+        if(num>=500){
+            string += 'E';
+            num -= 500;
+        }
+        if(num>=300){
+            string += 'D';
+            num -= 300;
+        }
+        if(num>=100){
+            string += 'C';
+            num -= 100;
+        }
+        if(num>=100){
+            string += 'C';
+            num -= 100;
+        }
+        if(num>=50){
+            string += 'Z';
+            num -= 50;
+        }
+        if(num>=30){
+            string += 'Y';
+            num -= 30;
+        }
+        if(num>=10){
+            string += 'X';
+            num -= 10;
+        }
+        if(num>=10){
+            string += 'X';
+            num -= 10;
+        }
+        if(num>=5){
+            string += 'K';
+            num -= 5;
+        }
+        if(num>=3){
+            string += 'J';
+            num -= 3;
+        }
+        if(num>=1){
+            string += 'I';
+            num -= 1;
+        }
+        if(num>=1){
+            string += 'I';
+            num -= 1;
+        }
+        return string;
+    }
+
 }

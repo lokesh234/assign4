@@ -455,10 +455,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581815066783" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581733095812">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="566" y="287" key="com.intellij.ide.util.TipDialog" timestamp="1581815674870">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581733095812" />
+    <state x="566" y="287" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1581815674870" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581809893505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
