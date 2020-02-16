@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc58e82-54a4-4d51-919e-fe88e5b34422" name="Default" comment="" />
+    <list default="true" id="bbc58e82-54a4-4d51-919e-fe88e5b34422" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/converter/ElbonianArabicConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/converter/ElbonianArabicConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/converter/tests/ConverterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/converter/tests/ConverterTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,10 +27,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XmPa2kj9lpXCqmpUiUcl8my6Yj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -402,6 +410,8 @@
       <workItem from="1581703801864" duration="1494000" />
       <workItem from="1581728616934" duration="4181000" />
       <workItem from="1581733093166" duration="24000" />
+      <workItem from="1581741096046" duration="478000" />
+      <workItem from="1581809774610" duration="2117000" />
     </task>
     <servers />
   </component>
@@ -429,26 +439,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581648510984" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1581732847656">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1581811638552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581732847656" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1581732847656">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581811638552" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1581811638551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581732847656" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1581732847656">
+    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581811638551" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1581811638551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581732847656" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1581732847656">
+    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581811638551" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1581811638551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581732847656" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581811638551" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581733095812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581733095812" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581809893505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581809893505" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

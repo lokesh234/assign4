@@ -108,7 +108,68 @@ public class ElbonianArabicConverter {
                 throw new MalformedNumberException("The Elbonian Number " + S + "is not valid !");
             }
         }
+        NumExcept1(string);
+        NumExcept2(string);
+        NumExcept3(string);
+        NumExcept4(string);
+        NumExcept5(string);
     }
+
+    private void NumExcept1(String string) throws MalformedNumberException{
+        String betterString = string.trim();
+        int M = betterString.length() - betterString.replace("M", "").length();
+        int C = betterString.length() - betterString.replace("C", "").length();
+        int X = betterString.length() - betterString.replace("X", "").length();
+        int I = betterString.length() - betterString.replace("I", "").length();
+        if( M > 2 || C > 2  || X > 2 || I > 2){ throw new MalformedNumberException("The Elbonian Number " + betterString + " has more than 2 instances of M,C,X,I");}
+    }
+
+    private void NumExcept2(String string) throws MalformedNumberException{
+        String betterString = string.trim();
+        int D = betterString.length() - betterString.replace("D", "").length();
+        int E = betterString.length() - betterString.replace("E", "").length();
+        int Y = betterString.length() - betterString.replace("Y", "").length();
+        int Z = betterString.length() - betterString.replace("Z", "").length();
+        int J = betterString.length() - betterString.replace("J", "").length();
+        int K = betterString.length() - betterString.replace("K", "").length();
+        if( D > 1 || E > 1 || Y > 1 || Z > 1 || J > 1 || K > 1){ throw new MalformedNumberException("The Elbonian Number " + string + " has more than 1 instances of D,E,Y,Z,J,K");}
+    }
+
+    private void NumExcept3(String string) throws MalformedNumberException{
+        String betterString = string.trim();
+        int D = betterString.length() - betterString.replace("D", "").length();
+        int C = betterString.length() - betterString.replace("C", "").length();
+        if((D == 1) && (C > 1)){
+            throw new MalformedNumberException("The Elbonian Number " + betterString + " has more than one C even though D has already appeared once");
+        }
+    }
+
+    private void NumExcept4(String string) throws MalformedNumberException{
+        String betterString = string.trim();
+        int Y = betterString.length() - betterString.replace("Y", "").length();
+        int X = betterString.length() - betterString.replace("X", "").length();
+        if((Y == 1) && (X > 1)){
+            throw new MalformedNumberException("The Elbonian Number " + betterString + " has more than one X even though Y has already appeared once");
+        }
+    }
+
+    private void NumExcept5(String string) throws MalformedNumberException{
+        String betterString = string.trim();
+        int J = betterString.length() - betterString.replace("J", "").length();
+        int I = betterString.length() - betterString.replace("I", "").length();
+        if((J == 1) && (I > 1)){
+            throw new MalformedNumberException("The Elbonian Number " + betterString + " has more than one I even though J has already appeared once");
+        }
+    }
+
+    private void NumExcept6(String string) throws MalformedNumberException{
+        String betterString = string.trim();
+        char[] c = betterString.toCharArray();
+        for (int i = 0; i < betterString.length(); ++i){
+            if (c[i] == 'M' && c[i++] == '')
+        }
+    }
+
 
     /**
      * Converts the number to an Elbonian numeral or returns the current value if it is already in the Elbonian form.
