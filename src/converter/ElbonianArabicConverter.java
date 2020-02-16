@@ -113,6 +113,7 @@ public class ElbonianArabicConverter {
         NumExcept3(string);
         NumExcept4(string);
         NumExcept5(string);
+        NumExcept6(string);
     }
 
     private void NumExcept1(String string) throws MalformedNumberException{
@@ -162,11 +163,40 @@ public class ElbonianArabicConverter {
         }
     }
 
-    private void NumExcept6(String string) throws MalformedNumberException{
+    private void NumExcept6(String string) throws MalformedNumberException {
         String betterString = string.trim();
         char[] c = betterString.toCharArray();
-        for (int i = 0; i < betterString.length(); ++i){
-            if (c[i] == 'M' && c[i++] == '')
+        for (int i = 0; i < betterString.length(); ++i) {
+            if (c[i] == 'I' && (c[i+1] == 'J' || c[i+1] == 'K' || c[i+1] == 'X' || c[i+1] == 'Y' || c[i+1] == 'Z' || c[i+1] == 'C' || c[i+1] == 'D' || c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'J' && (c[i+1] == 'K' || c[i+1] == 'X' || c[i+1] == 'Y' || c[i+1] == 'Z' || c[i+1] == 'C' || c[i+1] == 'D' || c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'K' && (c[i+1] == 'X' || c[i+1] == 'Y' || c[i+1] == 'Z' || c[i+1] == 'C' || c[i+1] == 'D' || c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'X' && (c[i+1] == 'Y' || c[i+1] == 'Z' || c[i+1] == 'C' || c[i+1] == 'D' || c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'Y' && (c[i+1] == 'Z' || c[i+1] == 'C' || c[i+1] == 'D' || c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'Z' && (c[i+1] == 'C' || c[i+1] == 'D' || c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'C' && (c[i+1] == 'D' || c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'D' && (c[i+1] == 'E' || c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            if (c[i] == 'E' && (c[i+1] == 'M')) {
+                throw new MalformedNumberException("The Elbonian Number " + betterString + " Numerals are not in ascending order");
+            }
+            else{
+                return;
+            }
         }
     }
 
